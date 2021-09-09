@@ -1,0 +1,13 @@
+.banner {
+	padding: 30px 0;
+	text-align: center;
+	background: $garnet;
+	@include cf;
+
+	.title {
+		color: $white;
+	}
+}
+@media #{$smartphone} {
+	.banner {}
+}
