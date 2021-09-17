@@ -132,7 +132,7 @@ add_filter( 'jetpack_relatedposts_filter_options', 'jetpackme_more_related_posts
  * 特定の投稿で関連記事を表示しないようにする（is_singleのとこにIDを指定）
  */
 // function jetpackme_no_related_posts( $options ) {
-//   if ( is_single( array( 17, 19, 1, 11 ) ) ) {
+//   if ( is_single( array( 17, 19, 1, 11, 422 ) ) ) {
 //       $options['enabled'] = false;
 //   }
 //   return $options;
@@ -385,7 +385,7 @@ function readpost_typecheack( $postnum ) {
       $cat = get_the_category( $val );
       $cat_ID = $cat[0]->cat_ID;
 
-    if ( $posttype === "post" && $cat_ID != 19 && $cat_ID != 23 ): // ここで記事かどうかを見る。（特定カテゴリー出ないかも見る※後で追加）
+    if ( $posttype === "post" && $cat_ID != 19 && $cat_ID != 23 && $cat_ID != 422): // ここで記事かどうかを見る。（特定カテゴリー出ないかも見る※後で追加）
 
     if ( $postnum == $numlist ){ break; }
   ?>
@@ -437,7 +437,7 @@ function readpost_typecheack( $postnum ) {
  */
 // function mycus_search_filter_cat_func( $query ) {
 //   if ( $query->is_search() && $query->is_main_query() && ! $query->is_admin() ) {
-//       $cat_id = array( '19', '23' );
+//       $cat_id = array( '19', '23', '422' );
 //       $query->set( 'category__not_in', $cat_id );
 //   }
 //   return $query;
@@ -457,7 +457,7 @@ function my_pre_get_posts($query) {
     $query->set( 'posts_per_page', '3' ); // 除外したいカテゴリのID番号を指定
     return;
   } else { // それ以外の場合に処理
-    $query->set( 'category__not_in',array(19, 23) ); // 除外したいカテゴリのID番号を指定
+    $query->set( 'category__not_in',array(19, 23, 422) ); // 除外したいカテゴリのID番号を指定
     return;
   }
 }

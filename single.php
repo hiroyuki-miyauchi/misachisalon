@@ -27,7 +27,7 @@
                 <?php //comments_template(); // 投稿ページや固定ページのコメント情報を取得し、コメント欄の表示・投稿用のテンプレートファイルを読み込む（引数１：コメントテンプレート（デフォルトはcomments.php）、引数２：各コメントを区切る場合はtrueを指定する） ?>
               </div>
 
-              <?php if ( in_category( array( '19', '23' ) )) : ?>
+              <?php if ( in_category( array( '19', '23', '422' ) )) : ?>
               <?php else: ?>
                 <div class="postLinks">
                   <div class="postLink postLink-prev"><?php previous_post_link('<i class="fas fa-chevron-left"></i>%link'); // 前後の記事へのリンクとタイトルを表示する（引数１：リンクの前後に追加する文字。デフォルトは「≪%link」「%link≫」、引数２：表示するリンクのテキスト。デフォルトは記事のタイトル、引数３：表示させたくない記事のカテゴリーID。複数カテゴリーを除外する場合は配列、もしくはカンマ区切りにする、引数４：タクソノミー（CHAPTER5の5-03参照）。$in_same_termがtrueの場合に有効。デフォルトはcategory） ?></div>
@@ -68,7 +68,7 @@
               </div>
             </div> -->
 
-            <?php if ( in_category( array( '19', '23' ) )) : ?>
+            <?php if ( in_category( array( '19', '23', '422' ) )) : ?>
             <?php else: ?>
               <?php // 関連記事の表示位置をこちらに移動させる（JetPackプラグイン）
               if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
