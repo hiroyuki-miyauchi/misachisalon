@@ -2558,6 +2558,7 @@ ul.listStyleNone {
 
 ol {
   list-style: decimal;
+  padding-left: 2em;
 }
 ol.listStyleNone {
   list-style: none;
