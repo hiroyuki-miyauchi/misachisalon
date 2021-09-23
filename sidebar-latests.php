@@ -2,7 +2,7 @@
 $args = array(
   'post_type' => 'post', // 投稿記事だけを指定
   'posts_per_page' => 3, // 最新記事を○件表示
-  'cat' => array(-19, -23), // 指定カテゴリIDの除外（-をつけると除外）
+  'cat' => array(-19, -23, -422), // 指定カテゴリIDの除外（-をつけると除外）
 );
 $the_query = new WP_Query( $args ); // 「$the_query」変数に「new WP_Query(配列)」の形でクエリを記述し格納
 ?>
