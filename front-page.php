@@ -57,7 +57,7 @@
         <?php
           $args = array(
             'post_type'      => 'post', // 投稿タイプの指定、post（投稿）・page（固定ページ）・revision（履歴）・pnav_menu_item（ナビゲーションメニュー）・カスタム投稿タイプ（任意のカスタム投稿タイプ名）
-            'post_status'    => array( 'draft', 'pending', 'future' ), // 投稿ステータスの指定、publish（公開された投稿もしくは固定ページ）・pending（レビュー待ちの投稿）・draft（下書きの投稿）・auto-draft（コンテンツのない、新規作成された投稿）・future（予約公開設定された投稿）・private（ログインしていないユーザーからは見えない投稿）・inherit（リビジョン：履歴）・trash（ゴミ箱に入った投稿）・any（'trash' と 'auto-draft' を除き、すべてのステータスの投稿）
+            'post_status'    => array( 'pending', 'future' ), // 投稿ステータスの指定、publish（公開された投稿もしくは固定ページ）・pending（レビュー待ちの投稿）・draft（下書きの投稿）・auto-draft（コンテンツのない、新規作成された投稿）・future（予約公開設定された投稿）・private（ログインしていないユーザーからは見えない投稿）・inherit（リビジョン：履歴）・trash（ゴミ箱に入った投稿）・any（'trash' と 'auto-draft' を除き、すべてのステータスの投稿）
             'cat' => array( -19, -23, -422 ), // カテゴリーの指定（カテゴリIDを指定。省きたいものは -（マイナス）を付けて指定。）
             //'category_name' => 'info, code', // カテゴリーの指定（カテゴリスラッグを指定。, 区切りで指定するとそれらのいずれかを持つ投稿を、+ 区切りで指定するとそれら全てを持つ投稿を取得できる。）
             //'category__and' => array( 1, 6 ), // カテゴリーの指定（カテゴリIDを配列で指定。指定したIDのカテゴリをすべて含む投稿を取得できる。）

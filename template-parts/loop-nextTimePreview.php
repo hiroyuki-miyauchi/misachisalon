@@ -4,5 +4,6 @@
   <?php else : ?>
     <div class="nextTimePreview_imageBox"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage_600x400.png" alt="" loading="lazy" class="nextTimePreview_image"></div>
   <?php endif; ?>
+  <p class="nextTimePreview_time">投稿予定日：<?php the_time('Y年m月d日'); // 予約投稿した日付を表示 ?></p>
   <p class="nextTimePreview_title"><?php the_title(); // 現在の投稿のタイトルを表示、または取得する。必ずループの中で使用する（引数１：タイトルの前に置くテキスト（省略可）、引数２：タイトルの後に置くテキスト（省略可）、引数３：タイトルを表示するかどうか。trueなら表示（初期値はtrue）） ?></p>
 </li>

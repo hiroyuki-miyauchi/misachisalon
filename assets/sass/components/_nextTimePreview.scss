@@ -40,12 +40,20 @@
     min-height: 50px;
     font-size: 16px;
   }
+  &_time {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: #666;
+    font-size: 12px;
+    padding: 0 0 0 65px;
+  }
   &_title {
     display: flex;
     justify-content: left;
     /* flex-direction: column; */
     align-items: center;
-    padding: 0 0 0 65px;
+    padding: 14px 0 0 65px;
   }
   &_undecided {
     text-align: center;
@@ -68,8 +76,11 @@
     }
     &_image {
     }
-    &_title {
+    &_time {
       padding: 0 0 0 60px;
+    }
+    &_title {
+      padding: 20px 0 0 60px;
     }
   }
 }
