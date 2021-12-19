@@ -463,4 +463,14 @@ function my_pre_get_posts($query) {
 }
 add_action( 'pre_get_posts', 'my_pre_get_posts' );
 
+
+/**
+ * アーカイブ一覧の投稿数を追加表示（デフォルトはaタグの外に投稿数テキストが入る為、HTML修正）
+ */
+add_filter( 'get_archives_link', 'my_archives_link' );
+function my_archives_link( $output ) {
+  $output = preg_replace('/<\/a>\s*(&nbsp;)\((\d+)\)/','<span class="archives_numberOfPosts">（$2）</span></a>',$output);
+  return $output;
+}
+
 ?>
