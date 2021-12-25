@@ -26,6 +26,7 @@ wp_enqueue_style('misachisalon-common', get_template_directory_uri() . '/assets/
 if ( is_home() ) { // homeのみ読み込み
   wp_enqueue_style('misachisalon-home', get_template_directory_uri() . '/assets/css/home.min.css', array(), '1.0.3');
 } else if ( is_page('profile') ) { // profileのみ読み込み
+  wp_enqueue_style('misachisalon-contents', get_template_directory_uri() . '/assets/css/contents.min.css', array(), '1.0.5');
   wp_enqueue_style('misachisalon-profile', get_template_directory_uri() . '/assets/css/profile.min.css', array(), '1.0.1');
 } else { // 「home」や「profile」以外の全ページ読み込み
   wp_enqueue_style('misachisalon-contents', get_template_directory_uri() . '/assets/css/contents.min.css', array(), '1.0.5');

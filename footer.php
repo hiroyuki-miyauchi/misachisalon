@@ -3,7 +3,7 @@
 
 <?php if ( is_home() ) : // homeのみ読み込み ?>
   <?php get_template_part('template-parts/fixed-homeNavigation'); // 固定ナビゲーションを読み込む（ホーム・サイドバーなし） ?>
-<?php elseif ( is_page(array('42', '44', '96', '99', '38', '313', '94' ,'773', '775', '774', '771', '772')) ) : ?>
+<?php elseif ( is_page(array('42', '44', '96', '99', '38', '313', '94' ,'773', '775', '774', '771', '772', '3463')) ) : ?>
   <?php get_template_part('template-parts/fixed-homeNavigation'); // 固定ナビゲーションを読み込む（ホーム・サイドバーなし） ?>
 <?php else : // home以外読み込み ?>
   <?php get_template_part('template-parts/fixed-navigation'); // 固定ナビゲーションを読み込む（ホーム・サイドバーあり） ?>
@@ -42,7 +42,7 @@
 <?php // JS
 if ( is_home() ) {
   // トップページのみ読み込み
-} else if ( is_page(array('42', '44', '96', '99', '38', '313', '94' ,'773', '775', '774', '771', '772')) ) {
+} else if ( is_page(array('42', '44', '96', '99', '38', '313', '94' ,'773', '775', '774', '771', '772', '3463')) ) {
   // 固定ページ関係のみ読み込み
 }else {
   // その他、投稿ページなど
@@ -58,7 +58,7 @@ if ( is_home() ) {
   //wp_enqueue_style('slick-carousel', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.0.0');
   //wp_enqueue_script('slick-carousel', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '1.0.0', true);
   //wp_enqueue_script('misachisalon-home', get_template_directory_uri() . '/assets/js/home.min.js', array( 'jquery' ), '1.0.0', true);
-} else if ( is_page(array('42', '44', '96', '99', '38', '313', '94' ,'773', '775', '774', '771', '772')) ) {
+} else if ( is_page(array('42', '44', '96', '99', '38', '313', '94' ,'773', '775', '774', '771', '772', '3463')) ) {
   // 固定ページ関係のみ読み込み
 }else {
   // その他、投稿ページなど
