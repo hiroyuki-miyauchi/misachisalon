@@ -2373,7 +2373,7 @@
 }
 .content .wp-block-media-text {
   display: block;
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
   max-width: 100%;
   height: auto;
   border: 1px solid #942343;
