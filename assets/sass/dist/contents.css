@@ -38,9 +38,15 @@
   /* アソシエイトボタンセット */
   /* もっと見るボタン（クリック時非表示コンテンツを表示） */
   /*------------------------------
+   Jetpack関連情報部分の調整
+  ------------------------------*/
+  /*------------------------------
    wp block 調整用CSS
   ------------------------------*/
   /* 画像＋テキストブロック */
+  /*------------------------------
+   Democracy Poll 調整用CSS
+  ------------------------------*/
   /*------------------------------
    サイズ別
   ------------------------------*/
@@ -2215,7 +2221,7 @@
   width: 88px;
   height: auto;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 500;
   text-align: center;
   letter-spacing: 1px;
   background-color: #ffffff;
@@ -2371,6 +2377,28 @@
 .content .moreButton:hover {
   background-color: rgba(148, 35, 67, 0.9);
 }
+.content #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+  padding: 10px 5px 5px 5px;
+}
+.content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context, .content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+  padding: 0 5px 0 5px;
+}
+.content #jp-relatedposts h3.jp-relatedposts-headline {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+.content #jp-relatedposts h3.jp-relatedposts-headline em:before {
+  display: none;
+}
+.content #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post {
+  padding: 0 4px;
+}
+.content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+  width: calc(33.33% - 7px);
+}
 .content .wp-block-media-text {
   display: block;
   width: calc(100% - 20px);
@@ -2413,6 +2441,11 @@
   font-size: 20px;
   margin: 0;
   overflow: hidden;
+}
+.content input.dem-add-answer-txt {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 3px 10px;
 }
 @media only screen and (min-width: 1200px) {
   .content .content iframe.googlemap {
