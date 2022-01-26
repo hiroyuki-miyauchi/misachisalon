@@ -133,6 +133,31 @@
   <section class="sec bg-gray">
     <div class="container">
       <header class="sec_header">
+        <h2 class="title">タグ一覧<span>TAG</span></h2>
+      </header>
+
+      <div class="tags">
+        <ul class="tags_listBox">
+          <?php
+          $args = array(
+            'orderby' => 'count',
+            'order' => 'desc',
+            'number' => 30
+          );
+          $tags = get_terms('post_tag', $args);
+          foreach($tags as $value) {
+            echo '<li class="tags_list"><a href="'. get_tag_link($value->term_id) .'" class="tags_link">'. $value->name .' <span>('. $value->count .')</span></a></li>';
+          }
+          ?>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <header class="sec_header">
         <h2 class="title">閲覧履歴<span>BROWSING HISTORY</span></h2>
       </header>
 
@@ -144,7 +169,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec bg-gray">
     <div class="container">
       <header class="sec_header">
         <h2 class="title">サイト情報<span>INFORMATION</span></h2>

@@ -480,7 +480,7 @@ iframe{
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  font-size: 20px;
+  font-size: 20px !important;
   margin: 0;
   overflow: hidden;
 }
@@ -626,7 +626,7 @@ input.dem-add-answer-txt {
   }
 
   .wp-block-media-text .wp-block-media-text__content p {
-    font-size: 15px;
+    font-size: 15px !important;
     -webkit-line-clamp: 4;
     padding: 0;
   }
