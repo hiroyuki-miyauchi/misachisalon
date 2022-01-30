@@ -33,7 +33,7 @@
       </ul>
 
       <div class="footer_copyright">
-        <small>&copy; 2020 - <?php echo date('Y'); // 現在の西暦を取得 ?> misachisalon</small>
+        <small>&copy; 2020-<?php echo date('Y'); // 現在の西暦を取得 ?> hiroyuki miyauchi</small>
       </div>
     </div>
   </div>
