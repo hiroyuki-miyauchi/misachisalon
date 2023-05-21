@@ -1,0 +1,55 @@
+/*----------------------------------------
+ affiliate
+----------------------------------------*/
+.affiliate {
+  width: 100%;
+}
+
+.affiliate__inner {
+  width: 100%;
+}
+
+.affiliate__item-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.affiliate__item {
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 30px;
+}
+
+.affiliate__link {
+  display: block;
+  text-align: center;
+}
+
+.affiliate__image {
+  display: inline-block;
+}
+
+@media #{$smartphone} {
+  .affiliate {
+  }
+
+  .affiliate__inner {
+  }
+
+  .affiliate__item-box {
+    display: block;
+  }
+
+  .affiliate__item {
+    margin-bottom: 20px;
+  }
+
+  .affiliate__link {
+  }
+
+  .affiliate__image {
+    width: 100%;
+    height: auto;
+  }
+}
