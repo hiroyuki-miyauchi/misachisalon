@@ -4333,7 +4333,7 @@ body .archive .archive_list li a {
   display: block;
   text-decoration: none;
   position: relative;
-  line-height: 1;
+  line-height: 1.4;
   transition: 0.3s all 0s ease;
   padding: 20px 22px 20px 10px;
 }
@@ -4798,4 +4798,51 @@ body .archive.tags .tags_list a.tags_link:hover {
 .slide-menu {
   position: absolute;
   z-index: 999;
+}
+
+/*----------------------------------------
+ affiliate
+----------------------------------------*/
+.affiliate {
+  width: 100%;
+}
+
+.affiliate__inner {
+  width: 100%;
+}
+
+.affiliate__item-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.affiliate__item {
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 30px;
+}
+
+.affiliate__link {
+  display: block;
+  text-align: center;
+}
+
+.affiliate__image {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+  .affiliate__item-box {
+    display: block;
+  }
+
+  .affiliate__item {
+    margin-bottom: 20px;
+  }
+
+  .affiliate__image {
+    width: 100%;
+    height: auto;
+  }
 }

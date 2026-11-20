@@ -40,7 +40,7 @@
           <?php endif; ?>
 
           <div class="googleAdSenseHorizontal">
-            <?php get_template_part('template-parts/googleAdSense-horizontal'); // 「GoogleA dSense」横長タイプを読み込む ?>
+            <?php get_template_part('template-parts/googleAdSense-multiplex'); // 「GoogleA dSense」横長タイプを読み込む ?>
           </div>
 
           <div class="relatedArticle">
@@ -78,6 +78,10 @@
             <?php endif; ?>
 
           </div><!-- /relatedArticle end -->
+
+          <div id="affiliate-a8net">
+            <?php get_template_part('template-parts/affiliate-a8net'); // 「A8.net」のアフィリエイトパーツを読み込む ?>
+          </div>
 
           <div class="browsingHistory">
             <div class="browsingHistory_inner">
