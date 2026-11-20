@@ -362,7 +362,7 @@ function readpost() {
     }
   }
 
-  $postread = explode( ",", $_COOKIE['browsing_history'] );
+  $postread = explode( ",", $_COOKIE['browsing_history'] ?? '' ); // PHP8対応：cookie未設定時のWarning回避（挙動は従来と同じ）
   $postread = array_unique( $postread );
   $postread = array_values( $postread );
   return $postread;
